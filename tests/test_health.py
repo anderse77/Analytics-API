@@ -1,6 +1,7 @@
 from fastpi.testclient import TestClient
 from app.main import app
 
+
 def test_live():
     client = TestClient(app)
     response = client.get("/health/live")
