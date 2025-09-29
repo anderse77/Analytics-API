@@ -5,7 +5,7 @@ def test_items_flow():
     client = TestClient(app)
 
     # list should work
-    respones = client.get("/items/")
+    response = client.get("/items/")
     assert response.status_code == 200
     initial = len(response.json())
 
